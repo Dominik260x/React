@@ -1,13 +1,13 @@
 import { useState } from "react";
-import FooterContainer from "./container/contentInfo.jsx";
-import ProductSlider from "./container/ProductSlider.jsx";
-import BannerLogo from "./components/BannerCom/BannerLogo.jsx";
-import BannerBasket from "./components/BannerCom/BannerBasket.jsx";
-import ListItem from "./container/NavItem.jsx";
-import PhoneData from "./data/Phones.jsx";
-import ProductContainer from "./components/ProductComponents.jsx";
+import FooterContainer from "../container/contentInfo.jsx";
+import ProductSlider from "../container/ProductSlider.jsx";
+import BannerLogo from "../components/BannerCom/BannerLogo.jsx";
+import BannerBasket from "../components/BannerCom/BannerBasket.jsx";
+import ListItem from "../container/NavItem.jsx";
+import ConsoleData from "../data/Consoles.jsx";
+import ProductContainer from "../components/ProductComponents.jsx";
 
-function App() {
+function ConsolePage() {
   const [search, setSearch] = useState("");
   return (
     <>
@@ -29,26 +29,26 @@ function App() {
         </div>
         <BannerBasket />
       </header>
+      <ProductSlider />
       <ListItem />
       <section role="menubar" id="ProductsSection">
-        {PhoneData.filter((phone) => {
+        {ConsoleData.filter((console) => {
           return search.toLowerCase() === ""
-            ? phone
-            : phone.model.toLowerCase().includes(search);
-        }).map((phone) => (
+            ? console
+            : console.model.toLowerCase().includes(search);
+        }).map((console) => (
           <ProductContainer
-            key={phone.id}
-            img={phone.img}
-            model={phone.model}
-            description={phone.description}
-            price={phone.price}
+            key={console.id}
+            img={console.img}
+            model={console.model}
+            description={console.description}
+            price={console.price}
           />
         ))}
       </section>
-      <ProductSlider />
       <FooterContainer />
     </>
   );
 }
 
-export default App;
+export default ConsolePage;

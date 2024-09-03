@@ -1,14 +1,15 @@
 import { useState } from "react";
-import FooterContainer from "./container/contentInfo.jsx";
-import ProductSlider from "./container/ProductSlider.jsx";
-import BannerLogo from "./components/BannerCom/BannerLogo.jsx";
-import BannerBasket from "./components/BannerCom/BannerBasket.jsx";
-import ListItem from "./container/NavItem.jsx";
-import PhoneData from "./data/Phones.jsx";
-import ProductContainer from "./components/ProductComponents.jsx";
+import FooterContainer from "../container/contentInfo.jsx";
+import ProductSlider from "../container/ProductSlider.jsx";
+import BannerLogo from "../components/BannerCom/BannerLogo.jsx";
+import BannerBasket from "../components/BannerCom/BannerBasket.jsx";
+import ListItem from "../container/NavItem.jsx";
+import PhoneData from "../data/Phones.jsx";
+import ProductContainer from "../components/ProductComponents.jsx";
 
-function App() {
+const PhonePage = () => {
   const [search, setSearch] = useState("");
+
   return (
     <>
       <header role="banner">
@@ -49,6 +50,6 @@ function App() {
       <FooterContainer />
     </>
   );
-}
+};
 
-export default App;
+export default PhonePage;
