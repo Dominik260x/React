@@ -6,6 +6,25 @@ import ListItem from "../container/NavItem.jsx";
 
 export const ProductsInBasket = [];
 
+const phones = [
+  {
+    id: 1,
+    img: "/src/assets/images/Smartfon-REALME-12plus-5G-Zielony-front.jpg",
+    model: "Realme 12+5G",
+    description:
+      "Lorem ipsum dolor siedzi, consectetur adipiscing elita. Nunc eros urna.",
+    price: "3499,99zł",
+  },
+  {
+    id: 2,
+    img: "/src/assets/images/Smartfon-REALME-12plus-5G-Zielony-front.jpg",
+    model: "Samsung 12+5G",
+    description:
+      "Lorem ipsum dolor siedzi, consectetur adipiscing elita. Nunc eros urna.",
+    price: "3499,99zł",
+  },
+];
+
 export function BasketPage() {
   const [search, setSearch] = useState("");
   return (

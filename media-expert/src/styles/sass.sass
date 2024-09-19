@@ -93,6 +93,7 @@ section#ProductsSection
     grid-template-rows: 1fr 1fr 1fr
     .product-container
         margin: 2rem
+        align-items: center
         h2
            font-size: xx-large 
         h3
@@ -102,17 +103,23 @@ section#ProductsSection
             font-size: x-large
             color: green
         .product-div
-            margin: 0
-            height: 4rem
-            background-color: hsl(0, 0%, 0%)
-            border-radius: 1rem
             display: flex
             align-items: center
             justify-content: center
-            cursor: pointer
-            h5
-                font-size: x-large
-                color: white
+            button
+                border: none
+                background-color: hsl(0, 0%, 0%)
+                border-radius: 1rem
+                margin: 0
+                height: 4rem
+                width: 90%
+                display: flex
+                align-items: center
+                justify-content: center
+                cursor: pointer
+                h5
+                    font-size: x-large
+                    color: white
 
 section#BasketSection
     background-color: hsl(255, 0%, 100%)

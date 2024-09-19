@@ -108,6 +108,7 @@ section#ProductsSection {
 }
 section#ProductsSection .product-container {
   margin: 2rem;
+  align-items: center;
 }
 section#ProductsSection .product-container h2 {
   font-size: xx-large;
@@ -121,16 +122,23 @@ section#ProductsSection .product-container h4 {
   color: green;
 }
 section#ProductsSection .product-container .product-div {
-  margin: 0;
-  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section#ProductsSection .product-container .product-div button {
+  border: none;
   background-color: hsl(0, 0%, 0%);
   border-radius: 1rem;
+  margin: 0;
+  height: 4rem;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
 }
-section#ProductsSection .product-container .product-div h5 {
+section#ProductsSection .product-container .product-div button h5 {
   font-size: x-large;
   color: white;
 }

@@ -37,13 +37,15 @@ const PhonePage = () => {
             ? phone
             : phone.model.toLowerCase().includes(search);
         }).map((phone) => (
-          <ProductContainer
-            key={phone.id}
-            img={phone.img}
-            model={phone.model}
-            description={phone.description}
-            price={phone.price}
-          />
+          <>
+            <ProductContainer
+              key={phone.id}
+              img={phone.img}
+              model={phone.model}
+              description={phone.description}
+              price={phone.price}
+            />
+          </>
         ))}
       </section>
       <ProductSlider />
