@@ -12,14 +12,14 @@ const ProductComponent = (props) => {
         <h4>{props.price}</h4>
         <div className="product-div">
           <button
-            onClick={() => {
-              addPhone = {
-                id: props.id,
-                model: props.model,
-                img: props.img,,
-                price: props.price,
-              }
-            }}
+            // onClick={() => {
+            //   addPhone = {
+            //     id: props.id,
+            //     model: props.model,
+            //     img: props.img,
+            //     price: props.price,
+            //   }
+            // }}
           >
             <h5>Dodaj do koszyka</h5>
           </button>
